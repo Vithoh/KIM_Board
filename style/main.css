@@ -1,0 +1,22 @@
+/*body{
+    background-image: url("../images/rahmen.png"), url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+}
+*/
+
+body:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  -webkit-filter: blur(8px);
+  background-image: url("../images/rahmen.png"), url("../images/bg.jpg");
+  background-size: 100% 100%;
+}
