@@ -31,32 +31,17 @@ body:before {
 				 10px 10px 50px white;
 }
 
-.box nav ul li {
+.box button {
     float: left;
     list-style: none;
     text-align: center;
+	
 	text-decoration: none;
     background: rgba(255, 255, 255, .5);
-    width: 250px;
-	height:30px;
+    width: 50%;
+	height:50px;
 	
 	
-}
-
-.box nav ul li a{
-    text-decoration: none;
-    color: black;
-    display: block;
-}
- 
-.box nav ul li a:hover {
-    text-decoration: none;
-    color: #000000;
-    background-color: #33B5E5;
-}
-
-.box nav ul li.active a {
-    background: rgba(255, 255, 255, .5);
 }
 
 
