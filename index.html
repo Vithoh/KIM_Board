@@ -95,11 +95,13 @@ include("php/_functions.php");
 	  
 	  
 	  <main>
-	   MAIN
+	   
 		<div class="box" ng-controller="menuCtrl"> 
-			<md-button class="btn1" ng-click="test()">Login</md-button>
+			<md-button class="btn1" ng-click="login()">Login</md-button>
 			
-			<md-button class="btn1" >Register</md-button>
+			<md-button class="btn1" ng-click="register()">Register</md-button>
+
+      <div ui-view></div>
 		</div>	
 		
 	  </main>
@@ -131,6 +133,7 @@ include("php/_functions.php");
   
   <!-- Your application bootstrap  -->
   <script src="js/angular.js"></script>
+  <script src="js/angular-ui-router.min.js"></script>
   
 </body>
 </html>
