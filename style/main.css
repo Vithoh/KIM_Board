@@ -7,7 +7,7 @@
 }
 */
 
-body:before {
+body {
   content: '';
   z-index: -1;
   position: absolute;
@@ -16,7 +16,7 @@ body:before {
   top: 0;
   bottom: 0;
   
-  -webkit-filter: blur(8px);
+  /*-webkit-filter: blur(8px);*/
   background-image: url("../images/rahmen.png"), url("../images/bg.jpg");
   background-size: 100% 100%;
 }
@@ -30,18 +30,11 @@ body:before {
 	box-shadow: 12px 12px 40px white;
 }
 
-.box button {
-    float: left;
-    list-style: none;
+.box .btn1 {
+	float: left;
     text-align: center;
-	
-	text-decoration: none;
     background: rgba(255, 255, 255, .5);
-    width: 50%;
+    width: 284px;
 	height:50px;
-	
-	
 }
-
-
 
