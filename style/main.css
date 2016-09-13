@@ -86,3 +86,7 @@ body {
   margin-top: 21px;
   color: white;
 }
+
+.errorMsg{
+	color: #cc0000;margin-bottom: 10px
+}

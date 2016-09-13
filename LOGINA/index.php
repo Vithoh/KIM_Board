@@ -100,7 +100,7 @@ if (!empty($_POST['signupSubmit']))
 					<input type="password" name="passwordReg" autocomplete="off"/>
 					
 				<label>Passwort bestätigen</label>
-					<input type="password2" name="re-passwordReg" autocomplete="off"/>
+					<input type="password" name="re-passwordReg" autocomplete="off"/>
 					
 				<div class="errorMsg"><?php echo $errorMsgReg; ?></div>
 					<input type="submit" class="button" name="signupSubmit" value="Signup">

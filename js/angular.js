@@ -11,12 +11,12 @@ Kim_Board.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
     $stateProvider
         .state('login', {
             url:'/login',
-            templateUrl : "pages/login.htm"
+            templateUrl : "pages/login.php"
         })
 
         .state('register', {
             url:'/register',
-            templateUrl : "pages/register.htm"
+            templateUrl : "pages/register.php"
         })
  
 }]);
@@ -27,3 +27,4 @@ Kim_Board.controller("menuCtrl", ["$scope", "$state", function($scope, $state){
     }
 
 }]);
+

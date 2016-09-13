@@ -5,7 +5,7 @@ session_start();
 	define('DB_USERNAME', 'root@localhost');
 	define('DB_PASSWORD', '');
 	define('DB_DATABASE', 'test');
-	define("BASE_URL", "http://localhost:8080/Test/"); // Eg. http://yourwebsite.com
+	define("BASE_URL", "http://localhost/KIM_Board/LOGINA/"); // Eg. http://yourwebsite.com
 
 
 function getDB() 
