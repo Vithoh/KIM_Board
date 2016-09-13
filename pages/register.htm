@@ -1,35 +1,43 @@
 <div>
-
-	<div layout="row" >
-        <md-input-container flex="90">
-			<label md-theme="docs-dark">E-Mail</label>
-			<input required name="email" ng-model="project.email">
-			<div ng-messages="projectForm.email.$error">
-				<div ng-message="required">Eingabe benötigt.</div>
-			</div>
-        </md-input-container>
+<h1>Registrieren</h1>
+<hr>
+	<div class="center">
+		<div layout="row" >
+		<label id="icon"><i class="material-icons md-light">email</i></label>
+			<md-input-container flex="80">
+				<label md-theme="docs-dark">E-Mail</label>
+				<input required name="email" ng-model="project.email">
+				<div ng-messages="projectForm.email.$error">
+					<div ng-message="required">Eingabe benötigt.</div>
+				</div>
+			</md-input-container>
+		</div>
+		
+		<div layout="row">
+		<label id="icon"><i class="material-icons md-light">vpn_key</i></label>
+			<md-input-container flex="80">
+				<label>Passwort</label>
+				<input required name="password" ng-model="project.password" type="password">
+				<div ng-messages="projectForm.password.$error">
+					<div ng-message="required">Eingabe benötigt.</div>
+				</div>
+			</md-input-container>
+		</div>
+		
+		<div layout="row">
+		<label id="icon"><i class="material-icons md-light">vpn_key</i></label>
+			<md-input-container flex="80">
+				<label>Passwort bestätigen</label>
+				<input required name="re_password" ng-model="project.re_password" type="password">
+				<div ng-messages="projectForm.re_password.$error">
+					<div ng-message="required">Eingabe benötigt.</div>
+				</div>
+			</md-input-container>
+		</div>
+		<md-button class="md-raised md-primary register">BESTÄTIGEN</md-button>
+		
+		<md-button class="md-raised register" ng-click="login()">Einloggen</md-button>
 	</div>
-	
-	<div layout="row">
-        <md-input-container flex="90">
-			<label>Passwort</label>
-			<input required name="password" ng-model="project.password" type="password">
-			<div ng-messages="projectForm.password.$error">
-				<div ng-message="required">Eingabe benötigt.</div>
-			</div>
-        </md-input-container>
-	</div>
-	
-	<div layout="row">
-        <md-input-container flex="90">
-			<label>Passwort bestätigen</label>
-			<input required name="re_password" ng-model="project.re_password" type="password">
-			<div ng-messages="projectForm.re_password.$error">
-				<div ng-message="required">Eingabe benötigt.</div>
-			</div>
-        </md-input-container>
-	</div>
-	
 </div>
 
 
