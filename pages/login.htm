@@ -1,0 +1,25 @@
+<div>
+
+	<div layout="row">
+        <md-input-container flex="90">
+			<label>E-Mail</label>
+			<input required name="email" ng-model="project.email">
+			<div ng-messages="projectForm.email.$error">
+				<div ng-message="required">Eingabe benötigt.</div>
+			</div>
+        </md-input-container>
+	</div>
+	
+	<div layout="row">
+        <md-input-container flex="90">
+			<label>Passwort</label>
+			<input required name="password" ng-model="project.password" type="password">
+			<div ng-messages="projectForm.password.$error">
+				<div ng-message="required">Eingabe benötigt.</div>
+			</div>
+        </md-input-container>
+	</div>
+	
+</div>
+
+

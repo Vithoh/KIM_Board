@@ -1,26 +1,27 @@
 /**
      * You must include the dependency on 'ngMaterial' 
      */
-    var app = angular.module('Kim_Board', ['ngMaterial',"ngRoute", 'ui.router']);
+	// create the module and name it Kim_Board
+    var Kim_Board = angular.module('Kim_Board', ['ngMaterial',"ngRoute", 'ui.router']);
 
 
-app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+Kim_Board.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
  
     $stateProvider
         .state('login', {
             url:'/login',
-            template : "<h1>Banana</h1><p>Bananas contain around 75% water.</p>"
+            templateUrl : "pages/login.htm"
         })
 
         .state('register', {
             url:'/register',
-            template : "<h1>asdasds</h1><p>Bananas contain around 75% water.</p>"
+            templateUrl : "pages/register.htm"
         })
  
 }]);
 
-app.controller("menuCtrl", ["$scope", "$state", function($scope, $state){
+Kim_Board.controller("menuCtrl", ["$scope", "$state", function($scope, $state){
     $scope.login = function(){
         $state.go('login');
     }

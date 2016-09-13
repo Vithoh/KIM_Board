@@ -17,7 +17,7 @@ body {
   bottom: 0;
   
   /*-webkit-filter: blur(8px);*/
-  background-image: url("../images/rahmen.png"), url("../images/bg.jpg");
+  background-image: url("../images/rahmen_blur.png"), url("../images/bg_blur.jpg");
   background-size: 100% 100%;
 }
 
@@ -38,3 +38,7 @@ body {
 	height:50px;
 }
 
+.box .lr_container{
+	width: 400px;
+    margin: 0 auto;
+}
