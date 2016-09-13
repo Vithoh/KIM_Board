@@ -18,56 +18,32 @@ include("php/_functions.php");
 <html lang="en" >
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style/main.css">
   
 </head>
 <body ng-app="Kim_Board" ng-cloak>
-  <!--
-    Your HTML content here
-  -->  
-  
-  
-	  <header>
+  <header>
 	   HEADER
-	  </header>
+	</header>
 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  <main>
-	   
+  <main>
+    <!-- Login/Register Box -->
 		<div class="box" ng-controller="menuCtrl" > 
-			
-				
-					
-			
 			<div ui-view ></div>
-				
 		</div>	
-		
-	  </main>
+
+  </main>
 	  
 	  
-	 
-	  
-	  
-	  
-	  
-	  
-	  
-	  <footer>
+  <footer>
 	   FOOTER
-	  </footer>
+	</footer>
   
   
   
@@ -82,7 +58,7 @@ include("php/_functions.php");
   <!-- Angular Material Library -->
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
   
-  <!-- Your application bootstrap  -->
+  <!-- Application Scripts  -->
   <script src="js/angular.js"></script>
   <script src="js/angular-ui-router.min.js"></script>
   

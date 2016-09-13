@@ -22,12 +22,8 @@ Kim_Board.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
 }]);
 
 Kim_Board.controller("menuCtrl", ["$scope", "$state", function($scope, $state){
-    $scope.login = function(){
-        $state.go('login');
-    }
-
-    $scope.register = function(){
-        $state.go('register')
+    $scope.goto = function(page){
+        $state.go(page);
     }
 
 }]);
