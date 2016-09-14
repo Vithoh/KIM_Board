@@ -12,9 +12,9 @@
 
 							<label>E-Mail</label>
 							<input required name="emailReg" ng-model="project.email" autocomplete="off">
-
-							<div ng-message="required">Eingabe benötigt.</div>
-
+								<div ng-messages="projectForm.email.$error">
+									<div ng-message="required">Eingabe benötigt.</div>
+								</div>	
 						</md-input-container>
 				</div>
 				
@@ -26,10 +26,9 @@
 
 							<label>Passwort</label>
 							<input required name="passwordReg" ng-model="project.password" type="password" autocomplete="off">
-
-							
-							<div ng-message="required">Eingabe benötigt.</div>
-
+								<div ng-messages="projectForm.password.$error">
+									<div ng-message="required">Eingabe benötigt.</div>
+								</div>
 					</md-input-container>
 				</div>
 				
@@ -41,10 +40,9 @@
 
 							<label>Passwort bestätigen</label>
 							<input required name="re-passwordReg" ng-model="project.re_password" type="password" autocomplete="off">
-
-							
-								<div ng-message="required">Eingabe benötigt.</div>
-
+								<div ng-messages="projectForm.password.$error">
+									<div ng-message="required">Eingabe benötigt.</div>
+								</div>
 						</md-input-container>
 				</div>
 

@@ -70,7 +70,7 @@ if (!empty($_POST['signupSubmit']))
 	<link rel="stylesheet" href="style/main.css">
 	
 	</head>
-	<body ng-app="Kim_Board" ng-cloak>
+	<body ng-app="Kim_Board" ng-cloak class="body_blur">
 	<header>
 		HEADER
 		</header>
